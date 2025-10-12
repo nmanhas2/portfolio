@@ -17,7 +17,7 @@ function App() {
         <Routes location = {location} key={location.pathname}>
           <Route path="/" element={<PageWrapper><Home></Home></PageWrapper>}></Route>
           <Route path="/about" element={<PageWrapper><About></About></PageWrapper>}></Route>
-          <Route path="/portfolio" element={<PageWrapper><Projects></Projects></PageWrapper>}></Route>
+          <Route path="/projects" element={<PageWrapper><Projects></Projects></PageWrapper>}></Route>
           <Route path="/contact" element={<PageWrapper><Contact></Contact></PageWrapper>}></Route>
         </Routes>
       </AnimatePresence>
