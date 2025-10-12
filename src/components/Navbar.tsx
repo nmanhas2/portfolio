@@ -7,7 +7,7 @@ export default function Navbar() {
     { to: "/", label: "Home" },
     { to: "/about", label: "About" },
     { to: "/contact", label: "Contact" },
-    { to: "/portfolio", label: "Portfolio" },
+    { to: "/projects", label: "Projects" },
   ];
 
   return (
