@@ -1,4 +1,3 @@
-import React from 'react'
 import {FaReact, } from "react-icons/fa"
 import { RiTailwindCssFill } from "react-icons/ri";
 import { SiVite } from "react-icons/si";
