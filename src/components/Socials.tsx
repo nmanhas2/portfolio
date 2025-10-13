@@ -10,5 +10,5 @@ export default function Socials() {
         <FaGithub size={100}></FaGithub>
       </a>
     </div>
-  )
+  );
 }

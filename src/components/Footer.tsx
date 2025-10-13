@@ -7,5 +7,5 @@ export default function Footer() {
       <Stack />
       <span>© 2025 Nubal Manhas. All rights reserved.</span>
     </footer>
-  )
+  );
 }

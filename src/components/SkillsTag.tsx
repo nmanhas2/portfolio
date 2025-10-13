@@ -7,5 +7,5 @@ export default function SkillsTag({skillName}: SkillsTagProps) {
     <div className="border-4">
       {skillName}
     </div>
-  )
+  );
 }

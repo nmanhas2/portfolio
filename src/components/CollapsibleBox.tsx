@@ -11,9 +11,9 @@ export default function CollapsibleBox({title , children}: CollapsibleBoxProps) 
 
     return (
     <div>
-        <button onClick={() => setIsOpen(!isOpen)}>{title}</button>
+        <button onClick={() => setIsOpen(!isOpen)} className="text-[#E2DBBE] bg-[#C60F7B] text-5xl">{title}</button>
 
         {isOpen && <div>{children}</div>}
     </div>
-    )
+    );
 }

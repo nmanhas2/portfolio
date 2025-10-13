@@ -10,5 +10,5 @@ export default function Stack() {
       <SiVite size={30}></SiVite>
       <SiTypescript size={30}></SiTypescript>
     </div>
-  )
+  );
 }

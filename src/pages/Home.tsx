@@ -21,5 +21,5 @@ export default function Home() {
         <Socials />
       </div>
     </div>
-  )
+  );
 }
