@@ -14,7 +14,7 @@ export default function CollapsibleBox({ title, children }: CollapsibleBoxProps)
     <div className="w-full max-w-2xl border-2 border-[#C9A8FF] rounded-xl bg-[#C60F7B] text-[#E2DBBE] shadow-md">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="w-full text-left px-6 py-4 font-bold text-xl hover:bg-[#980B5D] rounded-t-xl"
+        className="w-full text-left px-6 py-4 font-bold text-xl hover:bg-[#980B5D] rounded-t-xl hover:cursor-pointer"
       >
         {title}
       </button>
