@@ -2,7 +2,7 @@ export default function Contact() {
   const formEndPoint = import.meta.env.VITE_FORMSPREE_ENDPOINT;
 
   return (
-    <div className="flex flex-col items-center justify-center p-10">
+    <div className="flex flex-col items-center justify-center p-10 bg-[#FFC2E5] w-full min-h-screen">
       <form
         action={formEndPoint}  // Replace with your actual Formspree endpoint
         method="POST"
@@ -34,7 +34,7 @@ export default function Contact() {
 
         <button
           type="submit"
-          className="bg-[#2D1E2F] text-[#FDF6FF] px-4 py-2 rounded-md hover:bg-[#C08497] transition">
+          className="bg-[#2D1E2F] text-[#FDF6FF] px-4 py-2 rounded-md hover:bg-[#C08497] transition hover:cursor-pointer">
           Send Inquiry
         </button>
       </form>
