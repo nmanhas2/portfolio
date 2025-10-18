@@ -10,11 +10,13 @@ export default function About() {
       <CollapsibleBox title="My Journey">
         <InfoBox>
           <div className="space-y-4">
+
+            {/*Journey - Learning Section */}
+            <h3 className="text-xl font-semibold mb-1">Learning About Embedded Systems</h3>
             <p>
               Ever since I was a kid, I’ve been fascinated by computers and technology. I knew early on that I wanted to work in tech, but I didn’t yet know
               which area would truly capture my interest, given how broad the field is.
             </p>
-
             <p>
               In high school, I took a few Computer Science classes and quickly found that I enjoyed programming and problem-solving. Still, something felt
               missing. I was good at it, but I wanted to work on something more tangible, something I could see and interact with. That curiosity eventually led
@@ -23,19 +25,19 @@ export default function About() {
               learned up to that point finally came together.
             </p>
 
+            {/*Journey - Projects Section */}
+            <h3 className="text-xl font-semibold mb-1">Projects</h3>
             <p>
               My real passion for Embedded Systems started during my final semester capstone project, where my team and I built an autonomous medication delivery
               robot. It was rough around the edges and not perfect by any means, but it worked! I had never felt such fulfillment from a project before. That’s
               when I knew I wanted to keep pursuing embedded development.
             </p>
-
             <p>
               After completing the CNT program, I decided to broaden my skills with the Bachelor of Technology in Management (BTech) program at NAIT. I already had
               the technical foundation, but I wanted to improve my soft skills like communication, presentation skills, and leadership. While working through business
               courses and presentations, I continued teaching myself embedded systems on the side. I took Udemy courses on bare-metal STM microcontroller programming
               and real-time operating systems (RTOS), then built small projects like developing custom drivers and using them in a proximity-based alarm system.
             </p>
-
             <p>
               In my final BTech semester, I worked on an automatic braking system for medical walkers in collaboration with the Glenrose Rehabilitation Hospital.
               I designed the PCB, wrote the firmware, and selected the components to solve a real problem faced by patients with cognitive challenges who often forget
@@ -44,6 +46,8 @@ export default function About() {
               in order to further develop the project and explore its potential as a product.
             </p>
 
+            {/*Journey - Industry Section */}
+            <h3 className="text-xl font-semibold mb-1">Entering The Industry</h3>
             <p>
               During that time, I also came across an opportunity to work as a Research Assistant focusing on Embedded Systems, where I’ve been able 
               to apply everything I’ve learned and continue expanding my skills in a real-world setting. I’ve worked on developing safety-critical firmware for environmental monitoring 
@@ -55,28 +59,8 @@ export default function About() {
             <p>
               Thank you for taking the time to read about my journey, and I hope you found it insightful!
             </p>
+
           </div>
-        </InfoBox>
-      </CollapsibleBox>
-
-
-      {/* Education Box*/}
-      <CollapsibleBox title="Education">
-        <InfoBox>
-          <dl className="space-y-4">
-            <div>
-              <dt className="font-semibold text-lg">Degree</dt>
-              <dd>Bachelor of Technology in Management (Honors), 2023–2025</dd>
-            </div>
-            <div>
-              <dt className="font-semibold text-lg">Diploma</dt>
-              <dd>Computer Engineering Technology, 2020–2023</dd>
-            </div>
-            <div>
-              <dt className="font-semibold text-lg">Institution</dt>
-              <dd>Northern Alberta Institute of Technology (NAIT)</dd>
-            </div>
-          </dl>
         </InfoBox>
       </CollapsibleBox>
 
@@ -84,6 +68,7 @@ export default function About() {
       <CollapsibleBox title="Experience">
         <InfoBox>
           <div className="space-y-6">
+
             {/* NAIT Role*/}
             <div>      
               <h3 className="text-xl font-semibold mb-1">Embedded Systems Research Assistant (Casual)</h3>
@@ -117,7 +102,7 @@ export default function About() {
               </ul>
             </div>
 
-              {/* Automation Role*/}
+            {/* Automation Role*/}
             <div>
               <h3 className="gap-4 text-xl font-semibold mb-1">Freelance Web Automation Developer</h3>
               <p className="text-sm text-gray-700 mb-2">June 2025 – September 2025</p>
@@ -138,6 +123,63 @@ export default function About() {
             </div>
 
           </div>
+        </InfoBox>
+      </CollapsibleBox>
+      
+      {/* Education Box*/}
+      <CollapsibleBox title="Education">
+        <InfoBox>
+          <dl className="space-y-4">
+            <div>
+              <dt className="font-semibold text-lg">Degree</dt>
+              <dd>Bachelor of Technology in Management (Honors), 2023–2025</dd>
+            </div>
+            <div>
+              <dt className="font-semibold text-lg">Diploma</dt>
+              <dd>Computer Engineering Technology, 2020–2023</dd>
+            </div>
+            <div>
+              <dt className="font-semibold text-lg">Institution</dt>
+              <dd>Northern Alberta Institute of Technology (NAIT)</dd>
+            </div>
+          </dl>
+        </InfoBox>
+      </CollapsibleBox>
+
+      {/* Certifications Box*/}
+      <CollapsibleBox title="Certifications">
+        <InfoBox>
+          <ul className="space-y-3">
+            {[
+              {
+                title: "Electronics Engineering Technologist in Training",
+                link: "assets/tt_cert.pdf",
+              },
+              {
+                title: "IoT Application Development with the ESP32",
+                link: "https://www.udemy.com/certificate/UC-83359794-4468-461c-86cf-c37c77e357a2/",
+              },
+              {
+                title: "Embedded Systems Bare-Metal Programming (STM32)",
+                link: "https://www.udemy.com/certificate/UC-b16c5fe4-829a-4b9d-a181-9b453e8d4e1f/",
+              },
+            ].map((cert) => (
+              <li
+                key={cert.title}
+                className="flex flex-col sm:flex-row pt-5 sm:justify-between sm:items-center text-lg"
+              >
+                <p className="font-semibold">{cert.title}</p>
+                <a
+                  className="text-blue-600 hover:underline text-base mt-1 sm:mt-0 sm:ml-4"
+                  href={cert.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View Certificate
+                </a>
+              </li>
+            ))}
+          </ul>
         </InfoBox>
       </CollapsibleBox>
 
